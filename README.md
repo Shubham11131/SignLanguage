@@ -1,64 +1,75 @@
 
-# Sign Language Detector 🤟  
-This repository contains the code and resources for a **Sign Language Detector** project developed as part of our **Project Based Learning (PBL)** course in college.
+# Sign Language Converter 🤟
+
+A deep learning-based project designed to help physically disabled individuals communicate using sign language in public spaces such as cafes and hotels. Developed as part of our **Project Based Learning (PBL)** course.
+
+## 🧠 Project Overview
+
+This project implements a **Sign Language Converter** using a Convolutional Neural Network (CNN). It recognizes body motion patterns associated with sign language gestures and converts them into text-based interpretations, aiding communication in real-world environments.
+
+## 🎯 Problem Statement
+
+Physically disabled individuals, especially those with hearing or speech impairments, face challenges in effectively communicating in public places. This project aims to bridge that communication gap by recognizing sign language gestures and translating them into readable text.
+
+## ⚙️ Technologies Used
+
+- **Python 3.x**
+- **TensorFlow / Keras**
+- **NumPy**
+- **Jupyter Notebook**
+- **Convolutional Neural Networks (CNN)**
 
 ## 📁 Repository Contents
 
 - **`0.npy`**  
-  A NumPy file that likely contains preprocessed data or feature arrays used for training or inference.
+  Contains NumPy array data – likely preprocessed features or training input.
 
 - **`ProzektSL+.ipynb`**  
-  Initial version of the Jupyter Notebook used to develop and test the sign language recognition model.
+  Initial development notebook with CNN training pipeline and gesture recognition logic.
 
 - **`ProzektSL+_final.ipynb`**  
-  Final refined Jupyter Notebook with the complete pipeline including data preprocessing, model training, evaluation, and testing.
+  Final refined notebook with complete functionality and model evaluation.
 
 - **`pbl_final.h5`**  
-  The trained Keras model saved in HDF5 format. This model is used to recognize sign language gestures.
+  Saved trained CNN model in HDF5 format.
 
 - **`README.md`**  
-  You’re reading it! This file explains the contents and purpose of the repository.
+  The file you're currently reading – contains details about the project.
 
-## 📌 Project Objective
+## 📊 Dataset
 
-To build a deep learning model that detects and recognizes hand gestures representing **Indian Sign Language (ISL)** alphabets or symbols. The main goal is to support accessibility for the hearing and speech-impaired community.
+We created a custom dataset by recording the motion of body parts involved in sign language gestures. The dataset was preprocessed and formatted into NumPy arrays for use with CNN models.
 
-## 🚀 Features
-
-- Hand gesture classification using deep learning
-- Trained on preprocessed image/feature data
-- Real-time prediction potential using the saved `.h5` model
-- Developed entirely in Python using TensorFlow/Keras and NumPy
-
-## 🛠️ Technologies Used
-
-- Python 3.x
-- NumPy
-- TensorFlow / Keras
-- Jupyter Notebook
-
-## 🧪 How to Run
+## 🚀 How to Run
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/sign-language-detector.git
-   cd sign-language-detector
+   git clone https://github.com/yourusername/sign-language-converter.git
+   cd sign-language-converter
    ```
 
-2. Install dependencies (recommended to use a virtual environment):
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the notebook:
+3. Open and run the final notebook:
    ```bash
    jupyter notebook ProzektSL+_final.ipynb
    ```
 
-4. Use the trained model `pbl_final.h5` for predictions.
+4. Use the saved model `pbl_final.h5` to make predictions.
 
-> ⚠️ Note: Ensure the correct input format as expected by the model (as defined in the notebook).
+## 💡 Features
+
+- Real-time sign language recognition
+- Trained on a custom dataset
+- CNN-based gesture classification
+- User-friendly pipeline for extension or real-time integration
 
 ## 📚 Acknowledgements
 
-This project was created as part of the **Project Based Learning (PBL)** course at our college. We thank our mentors and peers for their support and feedback.
+This project was created for our **Project Based Learning (PBL)** course. Special thanks to our instructors and peers for their guidance and support.
+
+---
+
